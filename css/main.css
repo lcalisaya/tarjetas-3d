@@ -131,3 +131,13 @@ figure .dorsal p {
   font-size: 14px;
   color: #fff;
 }
+
+@media screen  and (max-width: 992px) { /*En dispositivos de tamaño tablets directamente se verá el dorso de la tarjeta */
+  figure .dorsal {
+    backface-visibility: visible;
+    transform: perspective(600px) rotateY(0deg);
+  }
+  .card-container:hover figure {
+    transform: perspective(600px) rotateY(0deg);
+  }
+}
