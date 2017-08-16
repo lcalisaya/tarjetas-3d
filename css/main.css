@@ -30,6 +30,22 @@
    display: inline-block; /*Para que el enlace funcione correctamente*/
  }
 
+.card-container:hover figure { /*La imagen girará cuando se pase el mouse*/
+  -webkit-transform: perspective(600px) rotateY(180deg);
+  -moz-transform: perspective(600px) rotateY(180deg);
+  -ms-transform: perspective(600px) rotateY(180deg);
+  -o-transform: perspective(600px) rotateY(180deg);
+  transform: perspective(600px) rotateY(180deg);
+
+  -webkit-box-shadow: 13px 15px 1px -2px rgba(0,0,0,0.23);
+  -moz-box-shadow: 13px 15px 1px -2px rgba(0,0,0,0.23);
+  box-shadow: 13px 15px 1px -2px rgba(0,0,0,0.23);
+}
+
+.card-container:hover  a figure img {
+  /*filter: blur(2px);*/ /*Para dar un efecto desenfoque al fondo*/
+}
+
 figure {
   width: 300px;
   height: 350px;
@@ -60,4 +76,30 @@ figure .dorsal {
   transform: perspective(600px) rotateY(180deg);
   overflow: auto;
   backface-visibility: hidden;
+
+  background: #fc4a1a;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+figure .dorsal .title {
+  color: #fff;
+  font-weight: normal;
+  margin-bottom: 20px;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 24px;
+}
+
+figure .dorsal hr {
+  height: 2px;
+  background: #fff;
+  border: none;
+  margin-bottom: 20px;
+  opacity: .5;
+}
+
+figure .dorsal p {
+  line-height: 22px;
+  font-size: 14px;
+  color: #fff;
 }
