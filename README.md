@@ -8,3 +8,4 @@ README.md
 * Generador de sombras: http://www.cssmatic.com/es/box-shadow
 * Google Fonts: https://fonts.google.com/
 * uiGradients: https://uigradients.com/#Lizard
+* Generador de paleta de colores: https://www.canva.com/color-palette/
